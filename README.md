@@ -7,7 +7,7 @@
    SELECT * FROM persona;
    ```
    | passaport | nom       | cognom   | ciutat        |
-      |:----------|:----------|:---------|:--------------|
+   |:----------|:----------|:---------|:--------------|
    | 27673812M | Carme     | Peralta  | Cadaqués      |
    | X3478937A | Carles    | Sanàbria | Badalona      |
    | 47548338K | Anna      | Sanàbria | Badalona      |
@@ -45,7 +45,7 @@
    SELECT DISTINCT ciutat FROM persona;
    ```
    | ciutat        |
-                                                                              |:--------------|
+   |:--------------|
    | Roses         |
    | Tredòs        |
    | New York      |
@@ -81,7 +81,7 @@
    SELECT ciutat.ciutat, comarca.comarca FROM ciutat, comarca;
    ```
    | ciutat     | comarca        |
-                                                                              |:-----------|:---------------|
+   |:-----------|:---------------|
    | Cadaqués   | Barcelonès     |
    | Cadaqués   | Alt Empordà    |
    | Cadaqués   | Baix Llobregat |
@@ -150,7 +150,7 @@
    ```
 
    | nom   |
-         |:------|
+   |:------|
    | Carme |
 
 8. Nom de les persones de la comarca del Barcelonès (OJO! amb la clau forana!)
@@ -158,7 +158,7 @@
    SELECT nom FROM persona +N ciutat WHERE comarca='Barcelonès';
    ```
    | nom    |
-         |:-------|
+   |:-------|
    | Carles |
    | Anna   |
    | Sònia  |
@@ -212,13 +212,12 @@
    WHERE persona.ciutat = ciutat.ciutat;
    ```
    | count |
-      |:------|
+   |:------|
    | 9     |
 
 12. Quina és la primera ciutat d'aquelles en què hi viu alguna persona de la base de dades, per ordre alfabètic?
    
    ```postgresql
-      SELECT 1 FROM persona;
    ```
 
 13. Quants habitants hi ha entre totes les ciutats de la base de dades?
@@ -227,7 +226,7 @@
    ```
    
    | sum      |
-      |:---------|
+   |:---------|
    | 37469270 |
 
 14. Quin és el sou mitjà dels treballadors del club esportiu el mes de desembre del 2014? (Pots fer servir BETWEEN)
@@ -245,7 +244,7 @@
    ```
 
 | comarca        | sum     |
-   |:---------------|:--------|
+|:---------------|:--------|
 | Barcelonès     | 1831530 |
 | Segrià         | 139809  |
 | Baix Llobregat | 175188  |
@@ -265,7 +264,7 @@
    ```
 
 | ciutat         | habitants |
-   |:---------------|:----------|
+|:---------------|:----------|
 | New York       | 18897109  |
 | Rio de Janeiro | 6320446   |
 | Berlín         | 3499879   |
